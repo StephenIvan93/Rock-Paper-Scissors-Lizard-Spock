@@ -4,3 +4,94 @@
     box-sizing: border-box;
 }
 
+.gameArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(
+      134.34% 134.34% at 50% 0%,
+      #1f3757 0%,
+      #131537 100%
+    );
+  }
+  
+  .scoreboard {
+    width: 700px;
+    height: 200px;
+    border-radius: 15px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .title {
+    padding-left: 30px;
+  }
+
+  .title h1 {
+    text-transform: uppercase;
+    color: white;
+
+  }
+  
+  .computerScore {
+    width: 150px;
+    height: 114px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .computerScore h1 {
+    color: #565468;
+    font-size: 56px;
+    font-family: "Barlow", sans-serif;
+  }
+  
+  .computerScore p {
+    color: #2a45c2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 2.5px;
+    text-align: left;
+  }
+
+  .playerScore {
+    width: 150px;
+    height: 114px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .playerScore h1 {
+    color: #565468;
+    font-size: 56px;
+    font-family: "Barlow", sans-serif;
+  }
+  
+  .playerScore p {
+    color: #2a45c2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 2.5px;
+    text-align: left;
+  }
