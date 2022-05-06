@@ -194,7 +194,7 @@ body {
   color: white;
 }
 
-.computerhand {
+.computerToken {
   display: flex;
   flex-direction: column;
 }

@@ -26,37 +26,39 @@
 
         <div class="tokens">
             <div class="rock token">
-              <img src="assets/images/rock.png" onclick="rockToken('rock')"/>
+              <img src="assets/images/rock.png" onclick="pickPlayerToken('rock')" alt="rock hand gesture">
             </div>
             <div class="paper token">
-              <img src="assets/images/paper.jpg" onclick="paperToken('paper')"/>
+              <img src="assets/images/paper.jpg" onclick="pickPlayerToken('paper')" alt="paper hand gesture"/>
             </div>
             <div class="scissors token">
-              <img src="assets/images/scissors.jpg" onclick="scissorsToken('scissors')"/>             
+              <img src="assets/images/scissors.jpg" onclick="pickPlayerToken('scissors')" alt="scissors hand gesture"/>             
             </div>
             <div class="lizard token">
-                <img src="assets/images/lizard.png" onclick="scissorsToken('lizard')"/>             
+                <img src="assets/images/lizard.png" onclick="pickPlayerToken('lizard')" alt="lizard hand gesture"/>             
               </div>
               <div class="spock token">
-                <img src="assets/images/spock.jpg" onclick="scissorsToken('spock')"/>             
+                <img src="assets/images/spock.jpg" onclick="pickPlayerToken('spock')" alt="spock hand gesture"/>             
               </div>
         </div>
 
        <div class="contest">       
-            <div class="userhand">
+            <div class="playerToken">
                 <h1>YOU PICKED</h1>
-                <div class="handImageContainer">
-                  <img id="userPickImage" src="/assets/Paper.png">
+                <div class="tokenImageContainer">
+                  <img id="playerChoice" src=" ">
                 </div>
             </div>
+
             <div class="referee"> 
                 <div class="decision"><h1> YOU WIN! </h1></div>
                 <div class="newGame" onclick="restartGame()">PLAY AGAIN</div>
             </div>
-            <div class="computerhand">
+
+            <div class="computerToken">
                 <h1>THE HOUSE PICKED</h1>
                 <div class="handImageContainer">
-                  <img id="computerPickImage" src='/assets/Paper.png' /> 
+                  <img id="computerChoice" src="/assets/images/scissors.jpg" /> 
                 </div>   
             </div>       
           </div>
