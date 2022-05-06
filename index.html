@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<link rel="stylesheet" href="/assests/css/style.css">
+<link rel="stylesheet" href="/assets/css/style.css">
 <title>Rock Paper Scissors Lizard Spock</title>
 </head>
 <body>
@@ -23,8 +23,48 @@
                 <h1> 0 </h1>
             </div>
         </div>
+
+        <div class="tokens">
+            <div class="rock token">
+              <img src="assets/images/rock.png" onclick="rockToken('rock')"/>
+            </div>
+            <div class="paper token">
+              <img src="assets/images/paper.jpg" onclick="paperToken('paper')"/>
+            </div>
+            <div class="scissors token">
+              <img src="assets/images/scissors.jpg" onclick="scissorsToken('scissors')"/>             
+            </div>
+            <div class="lizard token">
+                <img src="assets/images/lizard.png" onclick="scissorsToken('lizard')"/>             
+              </div>
+              <div class="spock token">
+                <img src="assets/images/spock.jpg" onclick="scissorsToken('spock')"/>             
+              </div>
+        </div>
+
+       <div class="contest">       
+            <div class="userhand">
+                <h1>YOU PICKED</h1>
+                <div class="handImageContainer">
+                  <img id="userPickImage" src="/assets/Paper.png">
+                </div>
+            </div>
+            <div class="referee"> 
+                <div class="decision"><h1> YOU WIN! </h1></div>
+                <div class="newGame" onclick="restartGame()">PLAY AGAIN</div>
+            </div>
+            <div class="computerhand">
+                <h1>THE HOUSE PICKED</h1>
+                <div class="handImageContainer">
+                  <img id="computerPickImage" src='/assets/Paper.png' /> 
+                </div>   
+            </div>       
+          </div>
+          
+
+
     </div>
-    
     <script src="assets/js/script.js"></script>
+
 </body>
 </html>

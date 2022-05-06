@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle, rgba(31,55,87,1) 0%, rgba(19,21,55,1) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ /************* Scoreboard and Title *************/
+  .scoreboard {
+    width: 500px;
+    height: 100px;
+    border-radius: 15px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 5px;
+  }
+  
+
+  .title h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+
+  }
+/******* Score windoww on the right *******/
+  .computerScore {
+    width: 50px;
+    height: 60px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .computerScore h1 {
+    color: #565468;
+    font-size: 20px;
+    font-family: "Barlow", sans-serif;
+  }
+  
+  .computerScore p {
+    color: #2a45c2;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 2.5px;
+    text-align: left;
+  }
+
+  /******* Score window on the left *******/
+  .playerScore {
+    width: 50px;
+    height: 60px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .playerScore h1 {
+    color: #565468;
+    font-size: 20px;
+    font-family: "Barlow", sans-serif;
+  }
+  
+  .playerScore p {
+    color: #2a45c2;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 2.5px;
+    text-align: left;
+  }
+  
+/************* Token position *************/
+
+.tokens {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.tokens img {
+  width: 70px;
+  height: 70px;
+  display: block;
+}
+
+.tokens .rock {
+  padding: 10px;
+}
+
+.tokens .paper {
+  padding: 10px;
+}
+
+.tokens .scissors {
+  padding: 10px;
+}
+
+.tokens .lizard {
+  padding: 10px;
+}
+
+.tokens .spock {
+  padding: 10px;
+}
+
+.tokens .token {
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.tokens .token:hover {
+  transform: translate3d(0px, -8px, 0px);
+}
+/***************************************************************************
+****************************************************************************
+***************************************************************************/
+
+
+.contest {
+  display: none;
+  margin-top: 50px;
+  width: 900px;
+}
+
+.contest img {
+  width: 275px;
+  height: 275px;
+}
+
+.contest > div {
+  flex: 1;
+}
+
+.contest h1 {
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.contest .newGame {
+  color: hsl(229, 25%, 31%);
+  background-color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.newGame:hover {
+  background: rgb(218, 218, 218);
+  transform: translate3d(0px, -2px, 0px);
+}
+
+.contest .handImageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.referee {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.referee h1 {
+  font-size: 45px;
+  color: white;
+}
+
+.computerhand {
+  display: flex;
+  flex-direction: column;
+}
