@@ -45,3 +45,37 @@ function pickComputerToken(token) {
 
         ReferenceError(token, computerToken);
 }
+
+// Check if Player is a Winner or Loser Function
+
+function referee(playerToken, computerToken) {
+    if (playerToken == "rock" && computerToken == "paper") {
+        setDecision("You Loose, Paper covers Rock ")
+    } 
+
+    
+}
+
+function setDecision(decision) {
+    document.querySelector(".decision h1").innerText = decision;
+  }
+  
+function restartGame() {
+    let contest = document.querySelector(".contest");
+    contest. style.display = "none";
+  
+    let hands = document.querySelector(".tokens");
+    tokens.style.display = "flex";
+  }
+/*
+
+  
+  const setDecision = (decision) => {
+    document.querySelector(".decision h1").innerText = decision;
+  }
+  
+  const setScore = (newScore) => {
+    SCORE = newScore;
+    document.querySelector(".score h1").innerText = newScore;
+  }
+  */
