@@ -1,5 +1,5 @@
 
-// Pick hand function
+    // Player token function
 function pickPlayerToken(token) {
     console.log(token);
     // Hide current page
@@ -22,5 +22,26 @@ function pickPlayerToken(token) {
         document.getElementById("playerChoice").src = "/assets/images/lizard.png";
         else if (token === "spock")
         document.getElementById("playerChoice").src = "/assets/images/spock.jpg";
+
+        pickComputerToken(token);
   }
 
+    // Computer Token Function
+function pickComputerToken(token) {
+    let tokens = ["rock", "paper", "scissors", "lizard", "spock"]
+    let computerToken = tokens[Math.floor(Math.random() * 5)];
+
+    //Set the Computer choice
+    if(computerToken === "rock")
+        document.getElementById("computerChoice").src = "/assets/images/rock.png";
+    else if (computerToken === "paper")
+        document.getElementById("computerChoice").src = "/assets/images/paper.jpg";
+    else if (computerToken === "scissors")
+        document.getElementById("computerChoice").src = "/assets/images/scissors.jpg";
+        else if (computerToken === "lizard")
+        document.getElementById("computerChoice").src = "/assets/images/lizard.png";
+        else if (computerToken === "spock")
+        document.getElementById("computerChoice").src = "/assets/images/spock.jpg";
+
+        ReferenceError(token, computerToken);
+}
