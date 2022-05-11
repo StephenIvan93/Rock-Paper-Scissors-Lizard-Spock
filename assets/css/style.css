@@ -209,6 +209,7 @@ footer {
   height: 100%;
   padding-bottom: 30px;
   display: flex;
+  font-family: "Barlow", sans-serif;
   flex-direction: column;
   text-align: center;
 }

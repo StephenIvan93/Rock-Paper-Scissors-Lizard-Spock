@@ -79,39 +79,39 @@ function referee(token, computerToken) {
         setDecision("You Loose!")
         setComputerScore(computerScore+1);
     } if (token == "paper" && computerToken == "spock") {
-        setDecision("You Win!")
+        setDecision("You Win!");
         setPlayerScore(playerScore+1);
     }
     // Scissors vs Computer
     if (token == "scissors" && computerToken == "rock") {
-        setDecision("You Loose!")
+        setDecision("You Loose!");
         setComputerScore(computerScore+1);
-    } if (token == "scissors" && computerToken == "paper") {
-        setDecision("You Win!")
+    } if (token == "scissors" && computerToken == "paper"){
+        setDecision("You Win!");
         setPlayerScore(playerScore+1);
     } if (token == "scissors" && computerToken == "scissors") {
-        setDecision("It's a Tie!")
+        setDecision("It's a Tie!");
     } if (token == "scissors" && computerToken == "lizard") {
-        setDecision("You Win!")
+        setDecision("You Win!");
         setPlayerScore(playerScore+1);
     } if (token == "scissors" && computerToken == "spock") {
-        setDecision("You Win!")
+        setDecision("You Win!");
         setComputerScore(computerScore+1);
     }
     // Lizard vs Computer
     if (token == "lizard" && computerToken == "rock") {
-        setDecision("You Loose!")
+        setDecision("You Loose!");
         setComputerScore(computerScore+1);
     } if (token == "lizard" && computerToken == "paper") {
-        setDecision("You Win!")
+        setDecision("You Win!");
         setPlayerScore(playerScore+1);
     } if (token == "lizard" && computerToken == "scissors") {
-        setDecision("You Loose!")
+        setDecision("You Loose!");
         setComputerScore(computerScore+1);
     } if (token == "lizard" && computerToken == "lizard") {
-        setDecision("It's a Tie!")
+        setDecision("It's a Tie!");
     } if (token == "lizard" && computerToken == "spock") {
-        setDecision("You Win!")
+        setDecision("You Win!");
         setPlayerScore(playerScore+1);
     }
     // Spock vs Computer
@@ -144,7 +144,7 @@ function setPlayerScore(playerNewScore) {
 }
 
 // Increment Computer score by 1
-function setComputerScore(computerNewScore) {
+function setComputerScore(computerNewScore){
     computerScore = computerNewScore;
     document.querySelector(".computerScore h2").innerText = computerNewScore;
 }
