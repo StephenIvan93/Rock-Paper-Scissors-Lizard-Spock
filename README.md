@@ -61,7 +61,7 @@ Javascript errors were not cleared as when i input the missing semi colons the I
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
+The live link can be found here - https://stephenivan93.github.io/Rock-Paper-Scissors-Lizard-Spock/
 
 
 ## Credits 
@@ -78,4 +78,10 @@ You can break the credits section up into Content and Media, depending on what y
 ### Media
 
 - The photos of the tokens were found in Google Images.
+
+### Improvement that can be  made
+
+- If i had more time to work on the project i would implement a refresh button instead of having to use the refresh key in the browser.
+- At the minute the gmae isn't suitable to play mobile devices i didn't get the chance to add the media queries.
+- I had thoughts of adding the rules to either the left or right of the game with the images labelled.
 
